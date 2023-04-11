@@ -1,0 +1,1 @@
+{"version":3,"names":["default","TabBar","TabView","TabBarIndicator","TabBarItem","SceneMap"],"sourceRoot":"../../src","sources":["index.tsx"],"mappings":"AAAA,SAASA,OAAO,IAAIC,MAAM,QAAQ,UAAU;AAG5C,SAASD,OAAO,IAAIE,OAAO,QAAQ,WAAW;AAG9C,SAASF,OAAO,IAAIG,eAAe,QAAQ,mBAAmB;AAG9D,SAASH,OAAO,IAAII,UAAU,QAAQ,cAAc;AAGpD,SAASJ,OAAO,IAAIK,QAAQ,QAAQ,YAAY"}

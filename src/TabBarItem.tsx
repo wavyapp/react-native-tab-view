@@ -9,7 +9,7 @@ import {
   ViewStyle,
 } from 'react-native';
 import useLatestCallback from 'use-latest-callback';
-import PlatformPressable from './PlatformPressable';
+import TouchableItem from './TouchableItem';
 import type { Scene, Route, NavigationState } from './types';
 
 export type Props<T extends Route> = {
@@ -231,14 +231,16 @@ const TabBarItemInternal = <T extends Route>({
   const badge = renderBadge ? renderBadge(scene) : null;
 
   return (
-    <PlatformPressable
-      android_ripple={{ borderless: true }}
+    <TouchableItem
+      borderless
       testID={getTestID(scene)}
       accessible={getAccessible(scene)}
       accessibilityLabel={accessibilityLabel}
       accessibilityRole="tab"
       accessibilityState={{ selected: isFocused }}
       // @ts-ignore: this is to support older React Native versions
+      accessibilityTraits={isFocused ? ['button', 'selected'] : 'button'}
+      accessibilityComponentType="button"
       accessibilityStates={isFocused ? ['selected'] : []}
       pressColor={pressColor}
       pressOpacity={pressOpacity}
@@ -253,7 +255,7 @@ const TabBarItemInternal = <T extends Route>({
         {label}
         {badge != null ? <View style={styles.badge}>{badge}</View> : null}
       </View>
-    </PlatformPressable>
+    </TouchableItem>
   );
 };
 
