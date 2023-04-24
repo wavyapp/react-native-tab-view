@@ -1,6 +1,6 @@
 {
-  "name": "react-native-tab-view",
-  "version": "2.16.0",
+  "name": "@wavyapp/react-native-tab-view",
+  "version": "2.16.1",
   "description": "Tab view component for React Native",
   "main": "lib/commonjs/index.js",
   "react-native": "lib/module/index.js",
@@ -71,12 +71,6 @@
     "react-native": "*",
     "react-native-gesture-handler": "*",
     "react-native-reanimated": "*"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
-    }
   },
   "jest": {
     "preset": "react-native",

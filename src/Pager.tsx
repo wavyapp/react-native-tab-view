@@ -8,9 +8,7 @@ import {
 } from 'react-native';
 import { PanGestureHandler, State } from 'react-native-gesture-handler';
 import Animated, {
-  Easing as OldEasing,
-  // @ts-ignore
-  EasingNode,
+  Easing
 } from 'react-native-reanimated';
 import memoize from './memoize';
 
@@ -24,8 +22,6 @@ import {
 } from './types';
 
 type Binary = 0 | 1;
-
-const Easing = EasingNode || OldEasing;
 
 export type Props<T extends Route> = PagerCommonProps & {
   onIndexChange: (index: number) => void;
