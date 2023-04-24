@@ -7,9 +7,7 @@ import {
   InteractionManager,
 } from 'react-native';
 import { PanGestureHandler, State } from 'react-native-gesture-handler';
-import Animated, {
-  Easing
-} from 'react-native-reanimated';
+import Animated, { Easing } from 'react-native-reanimated';
 import memoize from './memoize';
 
 import {
